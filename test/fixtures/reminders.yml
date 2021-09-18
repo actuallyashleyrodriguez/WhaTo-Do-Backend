@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  start: 2021-09-18 06:27:06
+  end: 2021-09-18 06:27:06
+  description: MyString
+  task_id: 1
+
+two:
+  type: 
+  start: 2021-09-18 06:27:06
+  end: 2021-09-18 06:27:06
+  description: MyString
+  task_id: 1
