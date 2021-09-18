@@ -13,14 +13,15 @@
 ActiveRecord::Schema.define(version: 2021_09_18_103133) do
 
   create_table "notes", force: :cascade do |t|
-    t.string "description"
+    t.text "description"
     t.integer "task_id"
+    t.integer "reminder_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "reminders", force: :cascade do |t|
-    t.string "type"
+    t.string "category"
     t.datetime "start"
     t.datetime "end"
     t.string "description"
@@ -31,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_09_18_103133) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "status"
-    t.string "type"
+    t.string "category"
     t.datetime "date"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
