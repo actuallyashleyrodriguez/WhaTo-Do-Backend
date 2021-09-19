@@ -16,6 +16,11 @@ class Api::V1::TasksController < ApplicationController
         end
     end
 
+    def update
+        task = Task.find_by_id(params[:id])
+        task.update(task_params)
+    end
+
 
 
     private
