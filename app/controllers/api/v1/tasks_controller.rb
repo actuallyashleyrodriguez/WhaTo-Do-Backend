@@ -19,6 +19,7 @@ class Api::V1::TasksController < ApplicationController
     def update
         task = Task.find_by_id(params[:id])
         task.update(task_params)
+        task.save
     end
 
 
